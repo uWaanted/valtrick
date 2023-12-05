@@ -7,6 +7,7 @@ export default async function Companies() {
     //     { title: "Curso de CSS", url: "/img/css.svg", description: "O curso CSS é realizado por..." },
     //     { title: "Curso de JS", url: "/img/js.svg", description: "O curso JSS é realizado por..." }
     // ]
+    //<a href="/companies.html"> </a>
     const { rows } = await sql`SELECT * from companies`;
     console.log(rows)
     return (
@@ -17,15 +18,15 @@ export default async function Companies() {
                 </h2>
             </div>
             {
-                rows.map((companie) => {
+                rows.map((company) => {
                     return (
-                        <div key={companie.id} className="bg-[#4d4d4d] rounded-md pb-2">
-                            <a href="/companies.html">
+                        <div key={company.id} className="bg-[#4d4d4d] rounded-md pb-2">
+                            
                                 <div className="text-white text-center">
-                                    <h3>{companie.name}L</h3>
-                                    <p>{companie.telephone}</p>
+                                    <h3>{company.name}</h3>
+                                    <p>{company.telephone}</p>
                                 </div>
-                            </a>
+                            
                         </div>
                     )
                 })
