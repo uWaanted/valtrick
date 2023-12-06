@@ -1,4 +1,4 @@
-import Companies from "../components/Companies";
+import Companies from "./components/Companies";
 
 export const revalidate=0
 
