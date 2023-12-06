@@ -30,7 +30,6 @@ export default function NewCompany({
                 <Input type="text" name="name" placeholder="Digite o Nome da Empresa"/><br/>
                 <Input type="text" name="telephone" placeholder="Digite o Telefone da Empresa"/> <br/>
                 <br/>
-                <UploadButton /> <br/>
                 <Button formAction={saveCompany} className="text-white">Salvar</Button>
             </form>
         </div>
