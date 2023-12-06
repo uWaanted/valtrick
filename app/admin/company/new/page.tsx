@@ -1,4 +1,3 @@
-import UploadButton from "@/app/components/UploadButton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { sql } from "@vercel/postgres";
